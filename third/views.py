@@ -8,6 +8,7 @@ from django.http import HttpResponse
 from django.shortcuts import redirect, render
 import datetime
 from .models import Booklet
+from django.contrib.auth import login, logout, authenticate,user
 
 # Create your views here.
 # def homepage(request,pk): 
@@ -127,3 +128,14 @@ class Home(View):
     def delete(self,request):
         print("In delete method")
         return HttpResponse("In delete method")    
+
+    def product_video(request):
+        print("In product view")
+        return HttpResponse("video")    
+def user_login(request):
+    username = request.POST.get("username")
+    password = request.POST.get("password")
+    authenticate()
+    if user:
+        login(request,user)
+        return HttpResponse("Successfully logged...!")
