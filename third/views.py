@@ -129,6 +129,9 @@ class Home(View):
         print("In delete method")
         return HttpResponse("In delete method")    
 
+    def product_video(request):
+        print("In product view")
+        return HttpResponse("video")    
 def user_login(request):
     username = request.POST.get("username")
     password = request.POST.get("password")
