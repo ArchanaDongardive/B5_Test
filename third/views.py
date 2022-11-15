@@ -127,3 +127,7 @@ class Home(View):
     def delete(self,request):
         print("In delete method")
         return HttpResponse("In delete method")    
+
+    def product_video(request):
+        print("In product view")
+        return HttpResponse("video")    
