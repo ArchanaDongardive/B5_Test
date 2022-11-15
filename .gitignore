@@ -1,8 +1,0 @@
-demo_library/
-        third/__init__.py
-        third/__pycache__/
-        third/migrations/
-        third/templates/
-        users/__init__.py
-        users/__pycache__/
-        users/migrations/
