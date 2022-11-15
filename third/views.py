@@ -139,5 +139,3 @@ def user_login(request):
     if user:
         login(request,user)
         return HttpResponse("Successfully logged...!")
-def func():
-    print("Hello")
